@@ -33,7 +33,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(Singleton.StartFlag);
+        if (Singleton != null)
+        {
+            Debug.Log(Singleton.StartFlag);
+        }
         //Just to prove I've used singleton in this script
     }
 
